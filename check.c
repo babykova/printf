@@ -6,7 +6,7 @@
 /*   By: ehayes <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/17 16:00:31 by ehayes            #+#    #+#             */
-/*   Updated: 2019/10/17 18:10:10 by ehayes           ###   ########.fr       */
+/*   Updated: 2019/10/24 21:51:12 by ehayes           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void	is_width(char **str, t_type *type)
 	if (**str > '0' && **str <= '9')
 	{
 		type->width = ft_atoi(**str);
-		*str = (*str) + ft_strlen(ft_itoa(type->width);
+		*str = (*str) + ft_strlen(ft_itoa(type->width));
 	}
 }
 
@@ -83,7 +83,3 @@ void	is_modif(char **str, t_type *type)
 	if (type -> hh)
 		type -> h = 0;
 }
-
-
-}
-
